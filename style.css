@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(231, 230, 230);
+}
+
+body p{
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.icons a{
+    display: inline-flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 50px;
+    background: white;
+    margin: 10px;
+    box-shadow: 0 10px 10px black;
+    
+    background-size: 100% 200%;
+    background-position: 0% 8%; 
+    transition: background-position 0.5s;
+    color: white;
+    
+}
+
+.icons a:nth-child(1){
+    color: blue;
+    background-image: linear-gradient(white 50%, blue 50%);
+}
+
+.icons a:nth-child(2){
+    background-image: linear-gradient(white 50%, red 50%);
+    color: red;
+}
+
+.icons a:nth-child(3){
+    color: rgb(29, 16, 242);
+    background-image: linear-gradient(white 50%, rgb(29, 16, 242) 50%);
+}
+
+.icons a:nth-child(4){
+    color: #0e76a8;
+    background-image: linear-gradient(white 50%, #0e76a8 50%);
+}
+
+.icons a:nth-child(5){
+    color:  #8a3ab9;
+    background-image: linear-gradient(white 50%, #8a3ab9 50%);
+}
+
+.icons a:hover{
+    background-position: 0% 100%;
+    color: white;
+}
